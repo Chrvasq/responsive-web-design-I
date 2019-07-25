@@ -155,7 +155,7 @@ footer p {
 }
 
 .index-middle-section article {
-	width: 49%;
+	width: 48%;
 	padding: 1%;
 	padding-left: 0;
 }
@@ -173,7 +173,7 @@ footer p {
 }
 
 .index-middle-section-bottom-half article {
-	width: 33%;
+	width: 30%;
 	padding: 1%;
 	padding-left: 0;
 }
@@ -291,3 +291,40 @@ footer p {
         display: none;
     }
 }
+
+@media (max-width: 500px) {
+    .index-header {
+        width: 90%;
+        margin: auto;
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 3% 1%;
+        font-size: xx-large;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+    }
+
+    .index-middle-section {
+        width: 90%;
+        margin: auto;
+    }
+
+    .index-middle-section article {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+
+    .contact-section {
+        width: 90%;
+        margin: auto;
+    }
