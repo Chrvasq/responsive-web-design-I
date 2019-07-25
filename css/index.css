@@ -71,25 +71,36 @@ into flexbox */
 }
 
 .container nav, header, section {
-	margin: auto;
 	padding: 0.5%;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
 }
 
 nav {
 	display: flex;
-	margin-top: 8px !important;
-	justify-content: space-between;
+    width: 80%;
 }
 
 nav a {
 	color: gray;
 	text-decoration: none;
-	line-height: 36px;
-	padding: 1%;
+    padding: 1%;
+    margin: 0 4%;
 }
 
-.logo {
-	vertical-align: top;
+nav a:first-child {
+    margin-left: 0;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+.nav-header div {
+    padding: 1%;
 }
 
 footer {
@@ -256,4 +267,27 @@ footer p {
 
 .services-bottom-section article ul li {
 	padding-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+    .nav-header {
+        flex-direction: column-reverse;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .index-header {
+        justify-content: center;
+    }
+
+    .index-header div:first-child {
+        margin: 0;
+    }
+
+    .index-header img {
+        display: none;
+    }
 }
